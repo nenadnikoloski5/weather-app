@@ -31,7 +31,7 @@ const app = (function() {
           return response.json();
         })
         .then(function(myJson) {
-          console.log(myJson);
+          //console.log(myJson);
 
             if(myJson.query.results != null){
 
