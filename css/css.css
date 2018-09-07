@@ -1,0 +1,382 @@
+.no-select {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent
+}
+
+
+
+
+body {
+    font-family: Lato, sans-serif;
+    font-size: 0;
+    background-color: #fcfcfc;
+    -webkit-text-size-adjust: 100%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#currentDetailsWrapper {
+    width: 100%;
+    line-height: 40px;
+    padding: 0 20px;
+    background-color: rgba(238, 238, 238, .35);
+    overflow: hidden
+}
+
+
+
+
+
+
+
+
+
+
+
+#currentDetails {
+    position: relative;
+    text-align: center;
+    left: -10px;
+    white-space: nowrap;
+    font-size: 14px;
+    margin: 0 auto;
+    max-width: 750px
+}
+
+#currentDetails>div {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#header {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background-color: #eee;
+    border: 1px solid transparent
+}
+
+
+
+
+
+
+
+
+
+
+
+#header .currentLocationButton,
+#header .searchButton {
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    margin-top: 7px;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .06)
+}
+
+
+
+
+
+
+
+
+#header .currentLocationButton:hover,
+#header .searchButton:hover {
+    background-color: rgba(0, 0, 0, .125)
+}
+
+#header .currentLocationButton img,
+#header .searchButton img {
+    display: inline-block;
+    margin-top: 7px
+}
+
+#header .options {
+    position: absolute;
+    right: 0;
+    top: 6px
+}
+
+
+
+
+
+
+nav {
+    display: table;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300
+}
+
+nav>.inner {
+    margin: 6px auto;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    white-space: nowrap;
+    height: 26px;
+    margin-top: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#searchForm {
+    position: relative;
+    width: 46%;
+    height: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    right: -56px
+}
+
+
+
+
+
+
+
+
+
+#searchForm input {
+    display: inline-block;
+    width: 85%;
+    height: 30px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    border: 0;
+    font-size: 18px;
+    padding: 5px;
+    margin: 7px 15px;
+    text-align: center
+}
+
+
+
+
+
+
+
+
+body.forecast #header a.backToForecast {
+    display: none
+}
+
+body.forecast #title {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin: 40px 15px
+}
+
+body.forecast.reversed #title .currently {
+    display: block
+}
+
+body.forecast #title span {
+    display: inline-block
+}
+
+body.forecast .currently-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    line-height: 1.1
+}
+
+body.forecast .feels-like {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: -6px
+}
+
+body.forecast .currently-skycon-temp {
+    display: flex;
+    align-items: center
+}
+
+body.forecast .currently-skycon-temp canvas {
+    width: 100%;
+    height: 100%;
+    max-width: 55px;
+    max-height: 55px;
+    margin-right: 5px
+}
+
+body.forecast .currently-skycon-temp span.temp {
+    font-size: 55px
+}
+
+body.forecast #title span.summary-high-low {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center
+}
+
+body.forecast #title span.summary-high-low>span {
+    margin: 0 3px
+}
+
+body.forecast #title span.summary-high-low span:first-child {
+    margin-left: 0
+}
+
+body.forecast #title span.summary-high-low .high-low-label {
+    font-weight: 400
+}
+
+body.forecast .summary-high-low p span {
+    font-weight: 700
+}
+
+body.forecast #title .skycon {
+    display: inline-block;
+    margin: 3px 10px 3px 6px
+}
+
+
+
+
+
+
+
+
+
+
+
+body.forecast #title .skycon.swip {
+    width: 60px;
+    height: 60px
+}
+
+body.forecast #title .skycon.swip canvas {
+    width: 100%;
+    height: 100%
+}
+
+body.forecast #title .currently .desc,
+body.forecast #title .next {
+    position: relative;
+    top: 7px;
+    line-height: 1.3em;
+    margin-bottom: 15px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body.forecast #title .currently {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+body.forecast #title .currently .desc.swap {
+    font-weight: 600;
+/*     text-align: left */
+}
+
+body.forecast #title .next.swap {
+    position: relative;
+    top: 0;
+    display: block;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 6px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 3px;
+    padding: 5px 0
+}

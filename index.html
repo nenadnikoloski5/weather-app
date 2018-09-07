@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <meta charset="utf-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/css.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/weather-icons.min.css">
+    <title>Weather App - Nenad</title>
+</head>
+
+<body class="forecast">
+
+    
+
+    <nav>
+        <div class="inner">
+           
+            
+            <span>
+      Weather App
+            </span>
+           
+        </div>
+    </nav>
+
+
+    <div id="header">
+
+        <div id="searchForm" >
+            
+
+            <input type="text" value="" placeholder="Example: New York" onsubmit="event.preventDefault()" class="myInput">
+
+            <a class="searchButton" onclick="app.searchNow()">
+                <img width="16" height="16" src="./images/search.png">
+            </a>
+
+          
+        </div>
+
+        
+
+  
+
+    </div>
+   
+
+    <div id="currentDetailsWrapper">
+        <div id="currentDetails" style="display: none">
+            <div class="wind">
+                <span class="label swip">Wind:</span>
+                <span class="val swap">
+          <span class="num swip">4</span>
+                <span class="unit swap">mph</span>
+
+               
+                </span>
+            </div>
+
+            <div class="humidity">
+                <span class="label swip">Humidity:</span>
+                <span class="val swap">
+          <span class="num swip">78</span><span class="unit swap">%</span>
+                </span>
+            </div>
+
+            
+
+            <div class="current_details_break"></div>
+
+            
+
+            <div class="visibility">
+
+                <span class="label swip">Visibility:</span>
+                <span class="val swap">
+          <span class="num swip">10+</span>
+                <span class="unit swap">mi</span>
+                </span>
+            </div>
+           
+            <div class="pressure">
+                <span class="label swip">Pressure:</span>
+                <span class="val swap">
+          <span class="num swip">1017</span>
+                <span class="unit swap">mb</span>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="center">
+
+
+
+      
+
+
+
+    </div>
+
+    
+
+    
+<script src="./js/js.js"></script>
+
+
+</body>
+
+</html>
